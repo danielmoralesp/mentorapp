@@ -1,0 +1,20 @@
+<template name="quoteEdit">
+	<div class="leave-comment mr0"><!--leave comment-->
+        <h3 class="text-uppercase">Edit massage</h3>
+        <br>
+        <form class="form-horizontal contact-form" role="form">
+            <div class="form-group">
+                <div class="col-md-12">
+                    <input type="text" class="form-control" name="autor" value="{{autor}}" placeholder="Autor" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-12">
+					<textarea class="form-control" rows="6" name="frase" value="{{frase}}" placeholder="Frase" required></textarea>
+                </div>
+            </div>
+            <input type="submit" value="Submit" name="submit" class="btn send-btn"/>
+            <a class="btn send-btn" href="#">Delete post</a>
+        </form>
+    </div><!--end leave comment-->
+</template>

@@ -11,23 +11,20 @@
 					<p>"{{frase}}"</p>
 					<div class="decoration">
                     	<a href="{{pathFor 'quotePage'}}" class="btn btn-default">Ver Quote</a>
+                    	 {{#if ownQuote}}
+                    	 	<a href="{{pathFor 'quoteEdit'}}" class="btn btn-default">Editar Quote</a>
+                    	 {{/if}}
                	 	</div>
-					<div class="social-share">
-			            <ul>
-			                <li class="text-center"><a class="s-facebook" href="{{facebook}}"><i
-			                                                class="fa fa-facebook"></i></a>
-			                </li>
-			                <li class="text-center"><a class="s-twitter" href="{{twitter}}"><i
-			                                                class="fa fa-twitter"></i></a></li>
-			                <li class="text-center"><a class="s-google-plus" href="{{google}}"><i
-			                                                class="fa fa-google-plus"></i></a></li>
-			                <li class="text-center"><a class="s-linkedin" href="{{linkedin}}"><i
-			                                                class="fa fa-linkedin"></i></a>
-			                </li>
-			                <li class="text-center"><a class="s-instagram" href="{{instagram}}"><i
-			                                                class="fa fa-instagram"></i></a></li>
-			            </ul>
-		            </div>
+               	 	<div class="social-share">
+						<span class="social-share-title pull-left text-capitalize">By {{creador}} On {{submitted}}</span>
+                        <ul class="text-center pull-right">
+                            <li><a class="s-facebook" href="{{facebook}}"><i class="fa fa-facebook"></i></a></li>
+                            <li><a class="s-twitter" href="{{twitter}}"><i class="fa fa-twitter"></i></a></li>
+                            <li><a class="s-google-plus" href="{{google}}"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a class="s-linkedin" href="{{linkedin}}"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a class="s-instagram" href="{{instagram}}"><i class="fa fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
 	            </div>
 	        </div>
 		</div>
