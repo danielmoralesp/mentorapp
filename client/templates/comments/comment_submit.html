@@ -1,0 +1,11 @@
+<template name="commentSubmit">
+    <form class="form-horizontal contact-form" role="form" name="comment">
+        <div class="form-group {{errorClass 'body'}}">
+            <div class="col-md-12">
+                <textarea class="form-control" rows="6" name="body" placeholder="Write Massage"></textarea> 
+                <span class="help-block">{{errorMessage 'body'}}</span>
+            </div>
+        </div>
+        <button type="submit" class="btn send-btn">Add Comment</button>
+    </form>
+</template>

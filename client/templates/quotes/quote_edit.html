@@ -3,14 +3,16 @@
         <h3 class="text-uppercase">Edit massage</h3>
         <br>
         <form class="form-horizontal contact-form" role="form">
-            <div class="form-group">
+            <div class="form-group {{errorClass 'autor'}}">
                 <div class="col-md-12">
-                    <input type="text" class="form-control" name="autor" value="{{autor}}" placeholder="Autor" required>
+                    <input type="text" class="form-control" name="autor" value="{{autor}}" placeholder="Autor" >
+                    <span class="help-block">{{errorMessage 'autor'}}</span>
                 </div>
             </div>
-            <div class="form-group">
+            <div class="form-group {{errorClass 'frase'}}">
                 <div class="col-md-12">
-					<textarea class="form-control" rows="6" name="frase" value="{{frase}}" placeholder="Frase" required></textarea>
+					<textarea class="form-control" rows="6" name="frase" value="{{frase}}" placeholder="Frase" ></textarea>
+                    <span class="help-block">{{errorMessage 'frase'}}</span>
                 </div>
             </div>
             <input type="submit" value="Submit" name="submit" class="btn send-btn"/>

@@ -1,3 +1,15 @@
 <template name="quotePage">
 	{{> quoteItem}}
+	<!--bottom comment-->
+	{{#each comments}}
+        {{> commentItem}}
+    {{/each}}
+    <!-- end bottom comment-->
+    {{#if currentUser}}
+      {{> commentSubmit}}
+    {{else}}
+    	<div class="leave-comment"><!--leave comment-->
+            <h4>Please log in to leave a comment.</h4>
+        </div><!--end leave comment-->
+    {{/if}}
 </template>	

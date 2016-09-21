@@ -18,7 +18,10 @@
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
                         <ul class="nav navbar-nav text-uppercase">
-                            {{#if currentUser}}<li><a href="{{pathFor 'quoteSubmit'}}">Submit Quote</a></li>{{/if}}
+                            {{#if currentUser}}
+                                <li><a href="{{pathFor 'quoteSubmit'}}">Submit Quote</a></li>
+                                {{> notifications}}
+                            {{/if}}
                             <li><a data-toggle="dropdown" class="dropdown-toggle" href="index.html">Home <i
                                     class="fa fa-angle-down"></i></a>
                                 <ul class="sub-menu">
@@ -35,24 +38,6 @@
                                     <li><a href="index-list.html"> 1st Large then List</a></li>
                                     <li><a href="grid-layout.html"> Grid Layout</a></li>
                                     <li><a href="index-grid.html"> 1st Large then Grid</a></li>
-
-
-                                </ul>
-                            </li>
-                            <li class="menu-item-has-children"><a data-toggle="dropdown" class="dropdown-toggle" href="#">Templates
-                                <i class="fa fa-angle-down"></i></a>
-                                <ul class="sub-menu">
-                                    <li><a href="full-width.html">Full Width</a></li>
-                                    <li><a href="index.html"> Right Sidebar</a></li>
-                                    <li><a href="left-sidebar.html"> Left Sidebar</a></li>
-                                    <li><a href="about-me.html">About me</a></li>
-                                    <li><a href="about-us-1.html">About us 1</a></li>
-                                    <li><a href="about-us-2.html">About us 2</a></li>
-                                    <li><a href="about-us-3.html">About us 3</a></li>
-                                    <li><a href="coming-soon.html">Coming soon</a></li>
-                                    <li><a href="404.html">404 Page</a></li>
-                                    <li><a href="blog.html">Single standard post</a></li>
-
                                 </ul>
                             </li>
                             <li class="menu-item-has-children"><a data-toggle="dropdown" class="dropdown-toggle" href="#">portfolio
@@ -63,8 +48,8 @@
                                     <li><a href="portfolio-3.html">portfolio 3 columns</a></li>
                                 </ul>
                             </li>
-                            <li><a href="#">ABOUT ME </a></li>
-                            <!--<li><a href="contact.html">CONTACT</a></li>-->
+                            <!--<li><a href="#">ABOUT ME </a></li>
+                            <li><a href="contact.html">CONTACT</a></li>-->
                             <li><a>{{> loginButtons}}</a></li>
                         </ul>
                         <div class="i_con">

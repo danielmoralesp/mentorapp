@@ -42,8 +42,10 @@ Template.quotesList.helpers({
 */
 
 // Este helper sigue funcionando asi se quite el autopublish
+/* SE HACE DESDE LA RUTA
 Template.quotesList.helpers({
   quotes: function() {
     return Quotes.find({}, {sort: {submitted: -1}});
   }
 });
+*/

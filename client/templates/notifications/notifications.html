@@ -1,0 +1,26 @@
+<template name="notifications">
+  <li class="menu-item-has-children"><a data-toggle="dropdown" class="dropdown-toggle" href="#">
+    Notifications
+    {{#if notificationCount}}
+      <span class="badge badge-inverse">{{notificationCount}}</span>
+    {{/if}}
+    <i class="fa fa-angle-down"></i></a>
+      <ul class="sub-menu">
+        {{#if notificationCount}}
+          {{#each notifications}}
+            {{> notificationItem}}
+          {{/each}}
+        {{else}}
+          <li><a >No Notifications</a></li>
+        {{/if}}
+      </ul>
+  </li>
+</template>
+
+<template name="notificationItem">
+  <li>
+    <a href="{{notificationQuotePath}}">
+      <strong>{{commenterName}}</strong> commented on your quote
+    </a>
+  </li>
+</template>
