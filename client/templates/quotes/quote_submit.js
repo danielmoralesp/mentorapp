@@ -27,7 +27,7 @@ Template.quoteSubmit.events({
         return throwError(error.reason);
       // show this result but route anyway
       if (result.quoteExists)
-        throwError('This link has already been posted');
+        throwError('Esta frase ya ha sido posteada');
       Router.go('quotePage', {_id: result._id});
     });
   }

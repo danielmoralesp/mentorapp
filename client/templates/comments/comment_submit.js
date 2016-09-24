@@ -22,7 +22,7 @@ Template.commentSubmit.events({
     };
     var errors = {};
     if (! comment.body) {
-      errors.body = "Please write some content";
+      errors.body = "Porfavor escriba algun comentario";
       return Session.set('commentSubmitErrors', errors);
     }
     Meteor.call('commentInsert', comment, function(error, commentId) {

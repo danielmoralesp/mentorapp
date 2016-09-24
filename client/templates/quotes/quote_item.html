@@ -10,25 +10,18 @@
 	                <h5>{{profesion}}</h5>
 					<p>"{{frase}}"</p>
 					<div class="decoration">
-                    	<a href="#" class="upvote btn btn-default {{upvotedClass}}">⬆ Upvote ({{votes}})</a>
-                        <a href="{{pathFor 'quotePage'}}" class="btn btn-default">Ver Quote</a>
+                    	<a href="#" class="upvote btn btn-default {{upvotedClass}}">⬆ Votos ({{votes}})</a>
+                        <a href="{{pathFor 'quotePage'}}" class="btn btn-default">Ver Frase</a>
                     	 {{#if ownQuote}}
-                    	 	<a href="{{pathFor 'quoteEdit'}}" class="btn btn-default">Editar Quote</a>
+                    	 	<a href="{{pathFor 'quoteEdit'}}" class="btn btn-default">Editar Frase</a>
                     	 {{/if}}
                	 	</div>
                	 	<div class="social-share">
-						<span class="social-share-title pull-left text-capitalize">By {{creador}} On {{submitted}}</span>
-                        <ul class="text-center pull-right">
-                            <li><a class="s-facebook" href="{{facebook}}"><i class="fa fa-facebook"></i></a></li>
-                            <li><a class="s-twitter" href="{{twitter}}"><i class="fa fa-twitter"></i></a></li>
-                            <li><a class="s-google-plus" href="{{google}}"><i class="fa fa-google-plus"></i></a></li>
-                            <li><a class="s-linkedin" href="{{linkedin}}"><i class="fa fa-linkedin"></i></a></li>
-                            <li><a class="s-instagram" href="{{instagram}}"><i class="fa fa-instagram"></i></a></li>
-                        </ul>
-                        <br><br><br>
+						<span class="social-share-title pull-left text-capitalize">Por {{creador}} el {{submitted}}</span>
+                        <br/><br/><br/>
                         <span class="social-share-title pull-left text-capitalize">
-                            <a href="{{pathFor 'quotePage'}}">{{commentsCount}} comments, </a>
-                            {{votes}} Votes
+                            <a href="{{pathFor 'quotePage'}}">{{commentsCount}} Comentarios, </a>
+                            {{votes}} Votos
                         </span>
                     </div>
 	            </div>

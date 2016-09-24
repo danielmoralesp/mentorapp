@@ -33,7 +33,7 @@ Template.quoteEdit.events({
   },
   'click .delete': function(e) {
     e.preventDefault();
-    if (confirm("Delete this quote?")) {
+    if (confirm("Eliminar esta frase?")) {
       var currentQuoteId = this._id;
       Quotes.remove(currentQuoteId);
       Router.go('home');
