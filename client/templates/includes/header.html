@@ -17,7 +17,7 @@
                         <ul class="nav navbar-nav text-uppercase">
                             <li><a href="{{pathFor 'newQuotes'}}">Nuevos</a></li>
                             <li><a href="{{pathFor 'bestQuotes'}}">Los Mejores</a></li>
-                            {{#if currentUser}}
+                            {{#if isInRole 'admin'}}
                                 <li><a href="{{pathFor 'quoteSubmit'}}">Subir Frase</a></li>
                                 {{> notifications}}
                             {{/if}}
