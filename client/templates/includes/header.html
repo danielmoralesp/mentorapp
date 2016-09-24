@@ -11,45 +11,19 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="{{pathFor 'quotesList'}}"><img src="images/logo.png" alt=""></a>
+                        <a class="navbar-brand" href="{{pathFor 'home'}}"><img src="images/logo.png" alt=""></a>
                     </div>
 
 
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
                         <ul class="nav navbar-nav text-uppercase">
+                            <li><a href="{{pathFor 'newQuotes'}}">New</a></li>
+                            <li><a href="{{pathFor 'bestQuotes'}}">Best</a></li>
                             {{#if currentUser}}
                                 <li><a href="{{pathFor 'quoteSubmit'}}">Submit Quote</a></li>
                                 {{> notifications}}
                             {{/if}}
-                            <li><a data-toggle="dropdown" class="dropdown-toggle" href="index.html">Home <i
-                                    class="fa fa-angle-down"></i></a>
-                                <ul class="sub-menu">
-                                    <li class="menu-item-has-children"><a href="">Header Layouts <i
-                                            class="fa fa-angle-right"></i></a>
-                                        <ul class="sub-menu">
-                                            <li><a href="index.html">Default Layout</a></li>
-                                            <li><a href="home-1.html">Header Layout-1</a></li>
-                                            <li><a href="home-2.html">Header Layout-2 </a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="index.html">Standard Blog Layout</a></li>
-                                    <li><a href="list-layout.html">List Layout</a></li>
-                                    <li><a href="index-list.html"> 1st Large then List</a></li>
-                                    <li><a href="grid-layout.html"> Grid Layout</a></li>
-                                    <li><a href="index-grid.html"> 1st Large then Grid</a></li>
-                                </ul>
-                            </li>
-                            <li class="menu-item-has-children"><a data-toggle="dropdown" class="dropdown-toggle" href="#">portfolio
-                                <i class="fa fa-angle-down"></i></a>
-                                <ul class="sub-menu">
-                                    <li><a href="single-portfolio.html">Single Portfolio</a></li>
-                                    <li><a href="portfolio-2.html">portfolio 2 columns</a></li>
-                                    <li><a href="portfolio-3.html">portfolio 3 columns</a></li>
-                                </ul>
-                            </li>
-                            <!--<li><a href="#">ABOUT ME </a></li>
-                            <li><a href="contact.html">CONTACT</a></li>-->
                             <li><a>{{> loginButtons}}</a></li>
                         </ul>
                         <div class="i_con">

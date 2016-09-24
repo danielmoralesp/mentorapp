@@ -35,6 +35,8 @@ Table of contents
 24. header page
 25. errors and alert
 26. Load more
+27. Upvote
+28. Animaciones
 
 -------------------------------------------------------------------*/
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,600);
@@ -282,6 +284,13 @@ post css
 
 article {
     border: 1px solid #eee;
+}
+
+.article {
+    position:relative;
+}
+.article.animate{
+  transition:all 300ms 0ms ease-in;
 }
 
 .entry-header {
@@ -1402,6 +1411,7 @@ about me
     padding: 50px 35px;
 }
 
+
 .about-me-text {
     padding: 40px 0;
     border-bottom: 1px solid #eee;
@@ -1692,7 +1702,33 @@ p.go-back-home a:hover {
   text-align: center;
   height: 60px;
   line-height: 60px;
-  margin-bottom: 10px; }
-  .load-more:hover {
+  margin-bottom: 10px; 
+}
+
+.load-more:hover {
     text-decoration: none;
-    background: rgba(0, 0, 0, 0.1); }
+    background: rgba(0, 0, 0, 0.1); 
+}
+
+/*--------------------------------------
+    upvote
+--------------------------------------*/
+
+.upvote {
+    display: block;
+    margin: 7px 12px 0 0;
+    float: left; 
+}
+
+/*--------------------------------------
+    animaciones
+--------------------------------------*/
+
+#main {
+  position: relative;
+}
+.page {
+  position: relative;
+  top: 0px;
+  width: 100%;
+}

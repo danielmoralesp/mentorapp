@@ -36,7 +36,7 @@ Template.quoteEdit.events({
     if (confirm("Delete this quote?")) {
       var currentQuoteId = this._id;
       Quotes.remove(currentQuoteId);
-      Router.go('quotesList');
+      Router.go('home');
     }
   }
 });

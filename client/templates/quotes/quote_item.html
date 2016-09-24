@@ -1,5 +1,5 @@
 <template name="quoteItem">
-	<article>
+	<article class="article">
 		<div class="post-area">
 	        <div class="single-about">
 	            <div class="about-us-img pull-left">
@@ -10,7 +10,8 @@
 	                <h5>{{profesion}}</h5>
 					<p>"{{frase}}"</p>
 					<div class="decoration">
-                    	<a href="{{pathFor 'quotePage'}}" class="btn btn-default">Ver Quote</a>
+                    	<a href="#" class="upvote btn btn-default {{upvotedClass}}">⬆ Upvote ({{votes}})</a>
+                        <a href="{{pathFor 'quotePage'}}" class="btn btn-default">Ver Quote</a>
                     	 {{#if ownQuote}}
                     	 	<a href="{{pathFor 'quoteEdit'}}" class="btn btn-default">Editar Quote</a>
                     	 {{/if}}
@@ -25,7 +26,10 @@
                             <li><a class="s-instagram" href="{{instagram}}"><i class="fa fa-instagram"></i></a></li>
                         </ul>
                         <br><br><br>
-                        <span class="social-share-title pull-left text-capitalize"><a href="{{pathFor 'quotePage'}}">{{commentsCount}} comments</a></span>
+                        <span class="social-share-title pull-left text-capitalize">
+                            <a href="{{pathFor 'quotePage'}}">{{commentsCount}} comments, </a>
+                            {{votes}} Votes
+                        </span>
                     </div>
 	            </div>
 	        </div>
