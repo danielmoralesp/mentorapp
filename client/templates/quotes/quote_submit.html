@@ -1,11 +1,62 @@
 <template name="quoteSubmit">
 	<div class="leave-comment mr0"><!--leave comment-->
-        <h3 class="text-uppercase">Send massage</h3>
+        <h3 class="text-uppercase">Enviar Frase</h3>
         <br>
         <form class="form-horizontal contact-form" role="form">
             <div class="form-group {{errorClass 'autor'}}">
                 <div class="col-md-12">
-                    <input type="text" class="form-control" name="autor" value="" placeholder="Autor"/>
+                    <select class="form-control" name="autor">
+                        <option value="">Autor</option>
+                        <option value="Aaron Patzer">Aaron Patzer - Cofundador Mint</option>
+                        <option value="Adam Dangelo">Adam Dangelo - Cofundador Quora</option>
+                        <option value="Ben Horowitz">Ben Horowitz - Cofundador Andressen-Horowitz (a16z)</option>
+                        <option value="Dave Mclure">Dave Mclure - Cofundador 500Startups</option>
+                        <option value="David Karp">David Karp - Cofundador Tumblr</option>
+                        <option value="David Sacks">David Sacks - Cofundador Yammer</option>
+                        <option value="Dennis Crowley">Dennis Crowley - Cofundador Foursquare</option>
+                        <option value="Drew Houston">Drew Houston - Cofundador Dropbox</option>
+                        <option value="Elon Musk">Elon Musk - Cofundador Tesla, SpaceX, SolarCity</option>
+                        <option value="Evan Doll">Evan Doll - Cofundador Flipboard</option>
+                        <option value="Fred Wilson">Fred Wilson - Cofundador Union Square Ventures</option>
+                        <option value="Jack Ma">Jack Ma - Cofundador Alibaba</option>
+                        <option value="Jan Koum">Jan Koum - Cofundador Whatsapp</option>
+                        <option value="Jason Fried">Jason Fried - Cofundador Basecamp</option>
+                        <option value="Jason Goldberg">Jason Goldberg - Cofundador FAB</option>
+                        <option value="Jeff Atwood">Jeff Atwood - Cofundador SatckExchange</option>
+                        <option value="Jeff Bezos">Jeff Bezos - Fundador Amazon</option>
+                        <option value="Jim Barksdale">Jim Barksdale - CEO Netscape</option>
+                        <option value="Joel Spolsky">Joel Spolsky - Cofundador StackExchange</option>
+                        <option value="John Donahoe">John Donahoe - CEO Ebay</option>
+                        <option value="Jonathan Ive">Jonathan Ive - Vice-Presidente Diseño Apple</option>
+                        <option value="Larry Ellison">Larry Ellison - Fundador Oracle</option>
+                        <option value="Larry Page">Larry Page - Cofundador Google</option>
+                        <option value="Marc Arment">Marc Arment - Cofundador Instapaper</option>
+                        <option value="Marissa Mayer">Marissa Mayer - CEO Yahoo</option>
+                        <option value="Mark Beinoff">Mark Beinoff - Fundador Salesforce</option>
+                        <option value="Mark Pincus">Mark Pincus - Fundador Zinga</option>
+                        <option value="Mark Suster">Mark Suster - Partner Upfront Ventures</option>
+                        <option value="Matt Mullenweg">Matt Mullenweg - Cofundador Wordpress</option>
+                        <option value="Michael Arrington">Michael Arrington - Fundador Techcrunch</option>
+                        <option value="Michael Dell">Michael Dell - Fundador Dell Coomputers</option>
+                        <option value="Naval Ravikant">Naval Ravikant - Cofundador AngelList</option>
+                        <option value="Paul Graham">Paul Graham - Cofundador YCombinator</option>
+                        <option value="Pony Ma">Pony Ma - Cofundador Tencent</option>
+                        <option value="Reid Hoffman">Reid Hoffman - Fundador Linkedin</option>
+                        <option value="Ryan Freitas">Ryan Freitas - Cofundador About.me</option>
+                        <option value="Sachin Agarwal">Sachin Agarwal - Cofundador Posterous</option>
+                        <option value="Sam Altman">Sam Altman - CEO YCombinator</option>
+                        <option value="Satya Nadela">Satya Nadela - CEO Microsoft</option>
+                        <option value="Scott Belsky">Scott Belsky - Cofundador Behance</option>
+                        <option value="Scott Heiferman">Scott Heiferman - Cofundador Meetup</option>
+                        <option value="Sergey Brin">Sergey Brin - Cofundador Google</option>
+                        <option value="Steve Jobs">Steve Jobs - Cofundador Apple</option>
+                        <option value="Tim Oreilly">Tim Oreilly - Cofundador O`Reilly Media</option>
+                        <option value="Tim Westergren">Tim Westergren - Cofundador Pandora</option>
+                        <option value="Tom Preston">Tom Preston - Cofundador GitHub</option>
+                        <option value="Tony Hsieh">Tony Hsieh - Cofundador Zappos</option>
+                        <option value="Travis Kalanick">Travis Kalanick - Cofundador Uber</option>
+                        <option value="Jack Dorsey">Jack Dorsey - Co-Fundador de Twitter</option> 
+                    </select>
                     <span class="help-block">{{errorMessage 'autor'}}</span>
                 </div>
             </div>
