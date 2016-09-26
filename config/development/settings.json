@@ -1,0 +1,8 @@
+{
+  "galaxy.meteor.com": {
+     "env": {
+       "ROOT_URL": "http://www.mentorapp.club/",
+       "MONGO_URL": "mongodb://danielmorales:DFMp1202242@ds041566.mlab.com:41566/mentorapp"
+     } 
+   }
+}

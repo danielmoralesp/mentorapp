@@ -29,3 +29,5 @@ accounts-password
 audit-argument-checks
 check
 alanning:roles
+force-ssl
+mdg:seo

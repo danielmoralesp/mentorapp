@@ -3,12 +3,12 @@
 		<div class="post-area">
 	        <div class="single-about">
 	            <div class="about-us-img pull-left" style="width:200px;"> 
-                    <img src="/images/img/{{autor}}.jpg" alt="" class="img-circle">
+                    <a href="{{pathFor 'quotePage'}}"><img src="/images/img/{{autor}}.jpg" alt="" class="img-circle"></a>
 	            </div>
 	            <div class="about-us-text">
-	                <h3 class="text-uppercase">{{autor}}</h3>
+	                <a href="{{pathFor 'quotePage'}}" class="quote"><h3 class="text-uppercase">{{autor}}</h3></a>
 	                <h5>{{profesion}}</h5>
-					<p>"{{frase}}"</p>
+					<p class="quote">"{{frase}}"</p>
 					<div class="decoration">
                     	<a href="#" class="upvote btn btn-default {{upvotedClass}}">⬆ Votos ({{votes}})</a>
                         <a href="{{pathFor 'quotePage'}}" class="btn btn-default">Ver Frase</a>
