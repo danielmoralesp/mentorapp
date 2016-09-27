@@ -118,3 +118,4 @@ Template.quoteItem.events({
     Meteor.call('upvote', this._id);
   }
 });
+

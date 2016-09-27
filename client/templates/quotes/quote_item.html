@@ -9,6 +9,18 @@
 	                <a href="{{pathFor 'quotePage'}}" class="quote"><h3 class="text-uppercase">{{autor}}</h3></a>
 	                <h5>{{profesion}}</h5>
 					<p class="quote">"{{frase}}"</p>
+                    <div class="social-share">
+                        <ul>
+                            <li class="text-center">
+                                <a class="s-facebook" target="_blank" href="http://www.facebook.com/sharer.php?u=http://www.mentorapp.club{{pathFor 'quotePage'}}"><i class="fa fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li class="text-center">
+                                <a class="s-twitter" target="_blank" href="http://twitter.com/home?status=http://www.mentorapp.club{{pathFor 'quotePage'}}"><i class="fa fa-twitter"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
 					<div class="decoration">
                     	<a href="#" class="upvote btn btn-default {{upvotedClass}}">⬆ Votos ({{votes}})</a>
                         <a href="{{pathFor 'quotePage'}}" class="btn btn-default">Ver Frase</a>
