@@ -17,7 +17,6 @@ caching-compiler@1.0.6
 caching-html-compiler@1.0.6
 callback-hook@1.0.9
 check@1.2.3
-copleykj:shower@0.1.16
 ddp@1.2.5
 ddp-client@1.2.9
 ddp-common@1.2.6
@@ -65,7 +64,6 @@ modules@0.7.6
 modules-runtime@0.7.6
 mongo@1.1.12
 mongo-id@1.0.5
-mrt:underscore-string-latest@2.3.3
 npm-bcrypt@0.9.1
 npm-mongo@1.5.49
 observe-sequence@1.0.12

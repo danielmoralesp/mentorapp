@@ -1,9 +1,9 @@
 <template name="subscribeItem">
 	<h3 class="widget-title text-uppercase text-center">Recibe Inspiración</h3>
-        <div class="form-group">
-        	<form role="form" name="subscribeForm">
-	            <input placeholder="Su Email" name="email" class="subscribe">
-	            <span id='email-error'></span>
+        <div class="form-group {{errorClass 'email'}}">
+        	<form role="form" name="subscribe">
+	            <input placeholder="Su Email" name="email" type="email" class="subscribe" required>
+	            <span class="help-block">{{errorMessage 'email'}}</span>
 	            <button type="submit" class="text-uppercase text-center btn btn-subscribe">Suscribirme Ahora</button>
         	</form>
         </div>
