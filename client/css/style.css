@@ -56,6 +56,10 @@ span, p, input {
     line-height: 26px;
 }
 
+input.subscribe {
+    width: 100%;
+}
+
 p.quote {
     font-family: 'Farsan', cursive;
     font-size: 20px
