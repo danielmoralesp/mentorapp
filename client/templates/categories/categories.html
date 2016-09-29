@@ -1,0 +1,14 @@
+<template name="categories">
+    <h3 class="widget-title text-uppercase text-center">Autores</h3>
+    <ul>
+        {{#if autorCount}}
+            {{#each autorCategories}}         
+            <li>
+                <a href="">{{autor}}</a><br>
+                <span class="post-count">{{profesion}}</span>
+                <!--<span class="post-count pull-right"> ({{autorCount}})</span>-->
+            </li>
+            {{/each}}
+        {{/if}}
+    </ul>
+</template>
