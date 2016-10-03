@@ -82,6 +82,8 @@ Template.quoteItem.helpers({
       return 'Cofundador Tencent';
     } else if (autor === 'Reid Hoffman'){
       return 'Fundador Linkedin';
+    } else if (autor === 'Ryan Freitas'){
+      return 'Cofundador About.me';
     } else if (autor === 'Sachin Agarwal'){
       return 'Cofundador Posterous';
     } else if (autor === 'Sam Altman'){
